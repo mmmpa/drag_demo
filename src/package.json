@@ -1,0 +1,76 @@
+{
+  "name": "alt",
+  "version": "1.0.0",
+  "description": "note",
+  "main": "index.js",
+  "scripts": {
+    "build": "watchify -t babelify ./js/index.js -o ./out/built.js -v",
+    "test": "mocha -w --require test/built/setup.js test/built/**/*-test.js"
+  },
+  "browser": {
+    "easeljs": "/home/ten/ruby_project/dot_dot/lib/alt/node_modules/easeljs/lib/easeljs-0.8.2.min.js"
+  },
+  "browserify-shim": {
+    "createjs": "easeljs"
+  },
+  "keywords": [
+    "note"
+  ],
+  "author": "mmmpa",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.3.1",
+    "codemirror": "^5.12.0",
+    "createjs": "0.0.0",
+    "easeljs": "^0.8.2",
+    "history": "^2.1.1",
+    "lodash": "^4.0.1",
+    "marked": "^0.3.5",
+    "react": "^15.0.2",
+    "react-addons": "^0.9.1-deprecated",
+    "react-dom": "^15.0.2",
+    "react-router": "^2.4.0",
+    "superagent": "^1.7.2",
+    "zepto": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.1",
+    "coffee-script": "^1.10.0",
+    "espower-babel": "^4.0.1",
+    "espower-typescript": "^5.0.1",
+    "events": "^1.1.0",
+    "exorcist": "^0.4.0",
+    "global": "^4.3.0",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-espower": "^1.0.1",
+    "gulp-gzip": "^1.2.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-mocha": "^2.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-shell": "^0.5.1",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5",
+    "isparta": "^4.0.0",
+    "istanbul": "^0.4.1",
+    "jquery": "^2.1.4",
+    "jsdom": "^9.0.0",
+    "licensify": "^3.1.0",
+    "mocha": "^2.3.4",
+    "nock": "^8.0.0",
+    "power-assert": "^1.2.0",
+    "react-addons-test-utils": "^15.0.2",
+    "react-unit": "^1.1.1",
+    "sinon": "^1.17.2",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.1"
+  }
+}
